@@ -194,6 +194,9 @@ Examples:
 ## Future improvements
 1. Stream CSV uploads in chunks to reduce memory usage.
 2. Replace `@csrf_exempt` with a standard CSRF-safe approach.
-3. Add full typing annotations across the project.
+3. Add full typing annotations across the project. (and extend by mypy)
 4. Add basic documentation with Sphinx.
 5. Logging in file
+6. Add linting (pylint, ruff)
+7. Add in process automatic reformating (black, ruff)
+
