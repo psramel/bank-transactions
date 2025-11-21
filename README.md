@@ -53,6 +53,7 @@ DB_PASSWORD=bankpass
 DB_HOST=127.0.0.1
 DB_PORT=5432
 ```
+IMPORTANT: These values are illustrative only. Use your own credentials locally and never commit real secrets or passwords to Source Control Systems.
 
 ## Create Dajngo project and app
 1. Start project
