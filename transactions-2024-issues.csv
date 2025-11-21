@@ -1,0 +1,7 @@
+reference,timestamp,amount,currency,description
+30000001,2024-03-15T10:00:00Z,1500,CZK,Valid income
+30000001,2024-04-10T12:00:00Z,-200,CZK,Duplicate reference
+30000002,not-a-date,-50,CZK,Invalid timestamp
+30000003,2023-09-01T08:30:00Z,0,CZK,Zero amount
+30000004,2023-09-01T08:30:00Z,30000,CZK,Big amount
+30000005,2023-09-01T08:30:00Z,30000,CZK,Big amount

@@ -1,0 +1,37 @@
+{% load static money %}
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <title>Transakce</title>
+    <link rel="stylesheet" href="{% static 'transactions/styles.css' %}">
+  </head>
+  <body>
+    <div class="table-wrapper">
+      <h1 class="table-title">Transakce</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Datum</th>
+            <th>Částka</th>
+            <th>Popis</th>
+          </tr>
+        </thead>
+        <tbody>
+      {% for t in transactions %}
+        <tr class="{% if max_income_ids and t.id in max_income_ids %}biggest-income{% endif %}">
+          <td>{{ t.timestamp|date:"Y-m-d H:i:s" }}</td>
+          <td class="amount">
+            <span class="amount-value {% if t.amount < 0 %}negative{% else %}positive{% endif %}">{{ t.amount|cz_amount }}</span>
+            {{ t.currency }}
+          </td>
+              <td>{{ t.description }}</td>
+            </tr>
+          {% empty %}
+            <tr><td colspan="3">Žádné transakce</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

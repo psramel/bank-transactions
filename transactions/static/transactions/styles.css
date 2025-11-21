@@ -1,0 +1,9 @@
+.table-wrapper { width: 80%; margin: 0 auto; }
+.table-title { text-align: center; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ccc; padding: 6px 10px; }
+thead th { background: #f2f2f2; }
+.amount { text-align: right; }
+.amount-value.negative { color: #a00; }
+.amount-value.positive { color: #060; }
+.biggest-income { background: #e6f7e6; font-weight: bold; }
